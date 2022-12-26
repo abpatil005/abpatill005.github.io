@@ -79,6 +79,20 @@
       transform: rotateY(-20deg);
       box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
     }
+
+    @media only screen and (max-width: 600px) {
+      .front, .back, .page {
+    transform-style: preserve-3d;
+    transform-origin: left center;
+    transition: transform .5s ease-in-out, box-shadow .5s ease-in-out;
+    position: absolute;
+    width: 120px;
+    height: 500px;
+    top: 0;
+    left: 0;
+    background-color: #F7F7F7;
+    padding: 40px;
+}
     </style>
   </head>
   <body>
